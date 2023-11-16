@@ -5,21 +5,29 @@
 </head> 
 
 <body> 
-    <span id="bla">gggg</span>
-    <button id="btn">do</button>
+    <input type="checkbox" id="er-det-en-fejl">
+    
+
+    <span id="game-container"></span>
 <script>
-    var bla = 55
-console.log("hej")
-    blaElm=document.getElementById("bla")
-    blaElm.innerHTML = bla
+ const checkbox = document.getElementById("er-det-en-fejl")
+ checkbox.addEventListener('change', (event) => {
+    validate()
+ })
 
-
-    function f(){
-        var bla2 = document.getElementById("bla")
-        console.log("tada", bla)
-
+    function validate() {
+        if (document.getElementById('er-det-en-fejl').checked) 
+        {
+            alert("checked");
+        }
+    
+        if(document.getElementById('er-det-en-fejl').checked){
+            document.getElementById("game-container").innerHTML='<iframe src="v4.final.html" height="800" width="1000" title="Racing game"></iframe>'
+        }
     }
-    document.getElementById("btn").onclick = f
+       
+       
+      // if ($('er-det-en-fejl').is(':checked'))  <iframe src="v4.final.html" title="description"></iframe>
 </script>
     </body>
     </html>
