@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+
+<html>
+<head>
+</head> 
+
+<body> 
+    <span id="bla">gggg</span>
+    <button id="btn">do</button>
+<script>
+    var bla = 55
+console.log("hej")
+    blaElm=document.getElementById("bla")
+    blaElm.innerHTML = bla
+
+
+    function f(){
+        var bla2 = document.getElementById("bla")
+        console.log("tada", bla)
+
+    }
+    document.getElementById("btn").onclick = f
+</script>
+    </body>
+    </html>
+
